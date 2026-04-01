@@ -1,4 +1,5 @@
 ## Tentang Gendes
+<img width="226" height="88" alt="image" src="https://github.com/user-attachments/assets/53c0a994-72e8-4281-8edc-c251b0bfa2e4" />
 
 Gendes adalah brand lokal Indonesia yang bergerak di bidang *feminine hygiene* — perawatan kebersihan area kewanitaan. Gendes hadir untuk menjawab kebutuhan perempuan Indonesia yang semakin sadar akan pentingnya menjaga kebersihan area intim, namun juga menginginkan produk yang memberikan rasa nyaman, aman, dan meningkatkan kepercayaan diri dalam aktivitas sehari-hari.
 
@@ -193,45 +194,121 @@ Repositori ini mendokumentasikan infrastruktur data analytics Gendes, mencakup p
 
 > **Audience:** Marketing Manager, Tim Promo, Growth  
 > **Sumber data:** `vw_mkt_promo_buyer`
+---
 
-### Ringkasan Performa Promo & Channel
+## Diskon Besar Tidak Menghasilkan GMV Terbesar (2025)
 
-**TikTok Shop — Breakdown per Purchase Channel (Completed Orders):**
+<img width="567" height="314" alt="image" src="https://github.com/user-attachments/assets/92379458-34e5-419d-90b7-d8283e9d9564" />
 
-| Channel | GMV | Orders | % GMV |
-|---|---|---|---|
-| TikTok Shop (organic/feed) | Rp 291.3 jt | 4.223 | **66%** |
-| Affiliate | Rp 79.7 jt | 1.125 | **18%** |
-| TikTok Live | Rp 69.9 jt | 833 | **16%** |
+<table>
+<tr>
+<td width="50%">
 
-**Rata-rata Discount Rate:** ~10% di kedua platform (Shopee 10.1%, TikTok 9.9%)
+### Key Insights
+- Bucket `02 | 6–10%` menghasilkan **GMV tertinggi Rp73.5M** dengan discount ratio hanya **7.8%**.
+- Bucket `06 | >25%` hanya menghasilkan **Rp5.3M** meski discount ratio mencapai **38.6%**.
+- Pola ini konsisten — semakin besar diskon, semakin kecil kontribusi GMV-nya.
+- Total discount yang diberikan selama 2025 mencapai **Rp22.3M** dari GMV Rp218.2M (~10.2%).
 
-### Insight Kunci
+</td>
+<td width="50%">
 
-**1. TikTok Shop feed (organic/paid ads) mendominasi 66% dari seluruh GMV TikTok — bukan Live.**
-Contrary to popular belief bahwa Live Commerce mendominasi TikTok Shop, data Gendes menunjukkan channel organik/feed masih menjadi generator volume terbesar. TikTok Live hanya 16% dari GMV dengan 833 order.
+### Business Implication
+- Deep discount **bukan strategi efisien** — biaya promosi besar tidak berbanding lurus dengan revenue.
+- Konsentrasikan budget promosi di rentang **6–10%** sebagai sweet spot GMV tertinggi dengan cost terendah.
+- Perlu evaluasi menyeluruh apakah flash sale >25% masih layak dipertahankan dalam kalender promosi.
 
-**2. Affiliate adalah channel dengan potensi besar yang relatif underdeveloped.**
-Affiliate menghasilkan Rp 79.7 jt (18% GMV) dari hanya 1.125 order — artinya AOV affiliate lebih tinggi dari rata-rata. Ini menunjukkan kualitas traffic affiliate lebih baik dalam hal nilai transaksi.
+</td>
+</tr>
+</table>
 
-**3. Discount rate ~10% cukup konsisten di semua channel — tidak ada diferensiasi strategi diskon.**
-Uniform discount rate mengindikasikan belum ada optimasi diskon berbasis channel atau buyer segment. Idealnya, buyer baru mendapat diskon akuisisi lebih dalam, sedangkan repeat buyer didorong dengan loyalty reward, bukan diskon besar.
+---
 
-**4. Payday cycle dan weekend pattern tersedia di data tapi belum tereksplore secara visual.**
-Kolom `is_payday` dan `day_of_week` tersedia di `vw_mkt_promo_buyer` — ada peluang untuk mengidentifikasi peak order timing dan menjalankan flash sale yang lebih presisi.
+##  Buyer Terbanyak Justru Ada di Diskon Rendah (2025)
 
-**5. Buyer segment (New vs Repeat) membutuhkan strategi promo berbeda.**
-Data menunjukkan split New/Repeat buyer bisa di-slice per channel — sebuah insight yang krusial untuk menentukan apakah campaign berjalan lebih efektif dalam akuisisi atau retensi.
+<img width="1222" height="363" alt="image" src="https://github.com/user-attachments/assets/3b74cc76-4d10-453c-8914-022af93acc15" />
 
-### Rekomendasi
 
-| Prioritas | Aksi | Target |
-|---|---|---|
-| **Tinggi** | Scale up program Affiliate — rekrut lebih banyak kreator mikro, prioritaskan yang menghasilkan AOV tinggi | Affiliate GMV +30% |
-| **Tinggi** | Diferensiasi strategi diskon: deep discount (>15%) untuk new buyer, voucher loyalty untuk repeat buyer | CR New buyer +10% |
-| **Sedang** | Rancang kalender Live Commerce yang lebih terstruktur — fokus pada H-1 payday dan weekend sore | Live GMV +25% |
-| **Sedang** | Implementasi A/B test di Shopee: test diskon 5%, 10%, 15% untuk cari sweet spot conversion vs margin | Data-driven pricing |
-| **Rendah** | Buat dashboard heatmap jam order untuk optimasi jadwal posting konten dan start Live | Conversion optimization |
+<table>
+<tr>
+<td width="50%">
+
+### Key Insights
+- Bucket `02 | 6–10%` mendominasi unique buyers dengan **1.090 buyers** (New: 681, Repeat: 409).
+- Repeat buyer **tidak terkonsentrasi di diskon tinggi** — mereka tetap terbesar di bucket diskon rendah.
+- Bucket `06 | >25%` hanya menghasilkan **103 unique buyers** — terendah dari semua bucket.
+- Repeat buyer rate secara keseluruhan berada di **36.8%** dari total 3.383 unique buyers.
+
+</td>
+<td width="50%">
+
+### Business Implication
+- Repeat buyer **tidak membutuhkan diskon besar** untuk kembali membeli — loyalitas tidak dibangun dari diskon.
+- Program retensi berbasis **voucher eksklusif atau early access** lebih cost-effective dari deep discount.
+- Fokus akuisisi new buyer cukup di rentang diskon **6–10%** tanpa perlu menawarkan diskon agresif.
+
+</td>
+</tr>
+</table>
+
+---
+
+## Diskon Tinggi Menghasilkan Completion Rate Lebih Rendah (2025)
+
+<img width="595" height="361" alt="image" src="https://github.com/user-attachments/assets/8b7f2e9e-ad9c-44e1-bb07-594775719b2d" />
+
+
+<table>
+<tr>
+<td width="50%">
+
+###  Key Insights
+- Completion rate tertinggi ada di bucket `02 | 6–10%` sebesar **89.2%** dan `03 | 11–15%` sebesar **87.1%**.
+- Bucket `06 | >25%` mencatat completion rate **terendah di 84.3%** — selisih 4.9 poin dari bucket terbaik.
+- Overall completion rate marketing berada di **88.6%** dari 2.999 completed orders.
+- Pola ini mengindikasikan order dari diskon besar lebih rentan dibatalkan setelah checkout.
+
+</td>
+<td width="50%">
+
+###  Business Implication
+- Diskon besar menarik **order impulsif** yang berakhir dengan pembatalan — net revenue-nya lebih kecil dari yang terlihat.
+- Hitung ulang **true ROI** setiap campaign diskon tinggi dengan memasukkan cancellation loss ke dalam kalkulasi.
+- Pertimbangkan batas maksimal diskon di **15–20%** sebagai kebijakan promosi standar untuk menjaga kualitas order.
+
+</td>
+</tr>
+</table>
+
+---
+
+## Peak Order Terkonsentrasi di Malam Hari (2025)
+
+<img width="1278" height="322" alt="image" src="https://github.com/user-attachments/assets/a47135c4-de02-435c-b1f5-c2d9655bb86a" />
+
+
+<table>
+<tr>
+<td width="50%">
+
+### Key Insights
+- Peak aktivitas order secara konsisten terjadi di **jam 20:00–21:00 malam** di semua hari tanpa terkecuali.
+- Nilai tertinggi tercatat di **Monday jam 21:00 (Rp3.7M)**, diikuti **Friday jam 21:00 (Rp3.7M)** dan **Sunday jam 20:00 (Rp3.3M)**.
+- Aktivitas mulai naik bertahap sejak jam 17:00–18:00 dan mencapai puncak di jam 20:00–21:00, lalu turun tajam setelah jam 22:00.
+- **Jam 8–13 pagi hingga siang adalah periode paling sepi** — Tuesday jam 15:00 mencatat nilai terendah di Rp0.6M.
+
+</td>
+<td width="50%">
+
+### Business Implication
+- Jadwalkan **TikTok Live, flash sale, dan push notifikasi** di rentang **jam 20:00–21:00** untuk memaksimalkan konversi saat traffic di puncaknya.
+- **Monday dan Friday malam** adalah slot prioritas tertinggi untuk Live Commerce — keduanya konsisten mencatat peak value tertinggi dalam seminggu.
+- Hindari menjadwalkan campaign utama di jam pagi — traffic masih rendah dan potensi konversi terbatas.
+- Manfaatkan **jam 18:00–19:00 sebagai warm-up** — posting konten teaser atau buka keranjang lebih awal sebelum peak jam 20:00.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -239,60 +316,123 @@ Data menunjukkan split New/Repeat buyer bisa di-slice per channel — sebuah ins
 
 > **Audience:** Brand Manager, Product Team  
 > **Sumber data:** `vw_brand_sku_flavor`
+---
 
-### Ringkasan Performa Produk
+## Vanilla & Bubblegum Mendominasi — Flavor Lain Jauh Tertinggal (2025)
 
-**GMV per Flavor — Gabungan Kedua Platform (Completed Orders):**
+<img width="1247" height="263" alt="image" src="https://github.com/user-attachments/assets/4b3130f5-a3f7-4e00-bc34-37af3f6a56d8" />
 
-| Flavor | Shopee GMV | TikTok GMV | Total | % Share |
-|---|---|---|---|---|
-| Vanilla | Rp 85.7 jt | Rp 196.6 jt | **Rp 282.3 jt** | 44.7% |
-| Bubblegum | Rp 67.3 jt | Rp 152.4 jt | **Rp 219.7 jt** | 34.7% |
-| Hazelnut | Rp 10.9 jt | Rp 27.1 jt | **Rp 38.0 jt** | 6.0% |
-| Mango | Rp 10.6 jt | Rp 23.8 jt | **Rp 34.4 jt** | 5.4% |
-| Bundle | Rp 10.0 jt | Rp 23.9 jt | **Rp 33.9 jt** | 5.4% |
 
-**Split Size 20ml vs 60ml:**
+<table>
+<tr>
+<td width="50%">
 
-| Size | Shopee GMV | Shopee Orders | TikTok GMV | TikTok Orders |
-|---|---|---|---|---|
-| 60ml | Rp 161.6 jt | 1.966 (74.6%) | Rp 372.1 jt | 4.614 (74.6%) |
-| 20ml | Rp 29.9 jt | 671 (25.4%) | Rp 68.8 jt | 1.567 (25.4%) |
+### Key Insights
+- **Vanilla (Rp97M)** dan **Bubblegum (Rp74M)** bersama mengontrol **78.4% total GMV flavor** di 2025.
+- Flavor ke-3 adalah **Mixed Bundle (Rp13M)** dan **Hazelnut (Rp13M)** — masing-masing hanya ~6% share.
+- **Mango (Rp11M)** dan **Grape (Rp10M)** berada di posisi terbawah dengan gap hampir 9x dari Vanilla.
+- Tren harian "GMV by Day and Flavor" menunjukkan Vanilla dan Bubblegum konsisten di atas sepanjang bulan, flavor lain flat mendekati nol.
 
-**Bundle Performance:**
+</td>
+<td width="50%">
 
-| Metric | Shopee | TikTok |
-|---|---|---|
-| Bundle GMV | Rp 10.0 jt | Rp 23.9 jt |
-| Bundle Orders | 91 (3.5%) | 216 (3.5%) |
-| Bundle % of Total GMV | 5.2% | 5.4% |
+### Business Implication
+- Vanilla dan Bubblegum adalah **hero SKU** yang harus dijaga ketersediaan stoknya — stockout pada dua flavor ini langsung berdampak besar ke GMV keseluruhan.
+- Flavor minor (Hazelnut, Mango, Grape) perlu **keputusan strategis**: apakah layak di-push dengan campaign khusus atau diposisikan sebagai pilihan niche tanpa investasi promosi besar.
+- Pertimbangkan untuk **mengembangkan varian baru** di bawah payung Vanilla atau Bubblegum daripada mendorong flavor yang sudah terbukti kurang diminati pasar.
 
-### Insight Kunci
+</td>
+</tr>
+</table>
 
-**1. Vanilla dan Bubblegum adalah duopoli — bersama-sama mengontrol 79.4% total GMV.**
-Kedua flagship flavor ini mendominasi secara konsisten di kedua platform. SKU top performer adalah `GDS-FOA-VAN-60` (Foam Vanilla 60ml) dan `GDS-SPR-VAN-60` (Spray Vanilla 60ml).
+---
 
-**2. Hazelnut dan Mango under-indexed secara signifikan — hanya 11% dari GMV gabungan.**
-Dengan hanya 5-6% share masing-masing, Hazelnut dan Mango jauh tertinggal. Ini bisa mengindikasikan masalah awareness, kurangnya push marketing, atau preferensi pasar yang memang lebih terbatas untuk kedua flavor ini.
+## Foam Mendominasi, Bundle Masih Sangat Kecil (2025)
 
-**3. Bundle hanya berkontribusi 3.5% dari total order — jauh di bawah potensinya.**
-Dengan penetrasi bundle yang sangat rendah (3.5% order), bundle belum berhasil menjadi strategi upsell yang efektif. Padahal bundle idealnya bisa mendorong AOV naik 30-50% per transaksi.
+<img width="1123" height="225" alt="image" src="https://github.com/user-attachments/assets/7fb0ffc5-8b9c-40b6-b0b9-64b95a3eab3b" />
 
-**4. Ukuran 60ml mendominasi 74.6% order di kedua platform secara konsisten.**
-Pattern ini sangat konsisten (74.6% di Shopee dan TikTok). Ukuran 20ml kemungkinan berfungsi sebagai trial size atau hadiah — strategi harga dan promosi untuk 20ml perlu direview apakah ia menjadi gateway untuk konversi ke 60ml.
 
-**5. Konsentrasi geografis Jawa untuk semua flavor — Luar Jawa belum tereksplor.**
-DKI Jakarta dan Jawa Barat mendominasi semua flavor. Sumatera Utara dan Sulawesi Selatan muncul sebagai pasar luar Jawa terbesar — ada peluang untuk melakukan regional campaign yang lebih targeted.
+<table>
+<tr>
+<td width="50%">
 
-### Rekomendasi
+### Key Insights
+- **Foam (Rp110M, 50.55%)** sedikit unggul dari **Spray (Rp95M, 43.38%)** di GMV product type 2025.
+- **Bundle hanya Rp13M (6.07%)** dari total GMV — penetrasi sangat rendah meski SKU bundle `GDS-BDL-SS-60` masuk top 10 SKU di posisi ke-5 dengan Rp7M.
+- Di scatter plot "Net Revenue vs Unit Sold", Foam Satuan dan Spray Satuan mendominasi volume, sedangkan cluster bundle sangat kecil.
+- SKU top 2 adalah **GDS-FOA-VAN-60 (Rp43M)** dan **GDS-SPR-VAN-60 (Rp39M)** — keduanya varian Vanilla.
 
-| Prioritas | Aksi | Target |
-|---|---|---|
-| **Tinggi** | Fokuskan inventory dan content marketing pada Vanilla 60ml dan Bubblegum 60ml sebagai hero SKU | Maintain dominasi, optimalkan margin |
-| **Tinggi** | Rancang bundle awareness campaign: tampilkan bundle sebagai "best value" di halaman produk dan konten TikTok Live | Bundle penetration dari 3.5% ke 8-10% |
-| **Sedang** | Lakukan limited time push untuk Hazelnut dan Mango — test apakah demand ada tapi tersembunyi atau memang low preference | Validasi market fit |
-| **Sedang** | Buat program "try size 20ml → upgrade 60ml" — jadikan 20ml sebagai funnel akuisisi pembeli baru | Repeat purchase rate |
-| **Rendah** | Eksplorasi kampanye regional untuk Sumatera Utara dan Sulawesi Selatan dengan kreator lokal | Geographic diversification |
+</td>
+<td width="50%">
+
+### Business Implication
+- Bundle belum berhasil sebagai **strategi upsell** — perlu dievaluasi apakah kendala di visibility, harga, atau value proposition yang belum terkomunikasi dengan baik.
+- Jadikan bundle sebagai **highlight di TikTok Live** dengan framing "hemat lebih banyak" untuk menaikkan penetrasi dari 6% ke target 12%+.
+- Keseimbangan Foam vs Spray yang relatif setara (50% vs 43%) menunjukkan **kedua format diterima pasar** — pertahankan keduanya dalam portofolio tanpa mengorbankan salah satu.
+
+</td>
+</tr>
+</table>
+
+---
+
+## DKI Jakarta & Jawa Barat Mendominasi, Luar Jawa Masih Sangat Kecil (2025)
+
+<img width="687" height="258" alt="image" src="https://github.com/user-attachments/assets/899bee8e-0189-4335-9fbb-73eece7adfe1" />
+
+
+<table>
+<tr>
+<td width="50%">
+
+### Key Insights
+- **DKI Jakarta (Rp52.4M)** dan **Jawa Barat (Rp49.6M)** bersama menyumbang **46.3% total GMV Brand** 2025.
+- DKI Jakarta memimpin dengan **746 orders**, completion rate **95.71%**, dan **923 units sold**.
+- Provinsi luar Jawa terbesar adalah **Sumatera Utara (Rp13.4M)** — sudah ada demand organik tapi masih jauh di bawah provinsi Jawa.
+- **Yogyakarta** mencatat completion rate **100%** dari 96 orders — sinyal kualitas buyer yang sangat baik di kota ini.
+
+</td>
+<td width="50%">
+
+### Business Implication
+- DKI Jakarta dan Jawa Barat adalah **core market** yang tidak boleh ada gangguan stok — prioritas fulfillment dan SLA pengiriman harus dijaga ketat di dua provinsi ini.
+- **Sumatera Utara** adalah kandidat ekspansi prioritas pertama di luar Jawa — demand organik sudah terbukti, akselerasi dengan kreator lokal dan regional campaign.
+- **Yogyakarta** dengan completion rate 100% layak dijadikan **pilot market** untuk program loyalitas atau bundle campaign sebelum di-scale ke kota lain.
+
+</td>
+</tr>
+</table>
+
+---
+
+## TikTok Mendominasi Volume, Shopee Tetap Relevan (2025)
+
+<img width="531" height="227" alt="image" src="https://github.com/user-attachments/assets/4199fcb1-3724-404b-89ec-016efdbdde73" />
+<img width="943" height="255" alt="image" src="https://github.com/user-attachments/assets/59d3fea4-8d62-4c72-9a37-4229aa78d37c" />
+
+
+<table>
+<tr>
+<td width="50%">
+
+### Key Insights
+- **TikTok Shop: 3K units (70.65%)** vs **Shopee: 1K units (29.35%)** dari total unit sold by platform 2025.
+- Di treemap GMV by Province, TikTok mendominasi semua provinsi besar — DKI Jakarta TikTok **Rp38M** vs Shopee **Rp14M**.
+- **Bottle Size 60ml mendominasi** di semua provinsi — DKI Jakarta: 717 unit (60ml) vs 206 unit (20ml), Jawa Barat: 654 vs 241.
+- Completion rate keseluruhan sangat tinggi **96.37%** dengan return rate hanya **3.63%**.
+
+</td>
+<td width="50%">
+
+### Business Implication
+- TikTok adalah **primary growth engine** — investasi konten, affiliate, dan Live Commerce harus terus ditingkatkan secara konsisten.
+- Shopee dengan ~30% share **tidak bisa diabaikan** — platform ini melayani segmen buyer berbeda dan perlu strategi tersendiri, bukan sekadar mirror konten TikTok.
+- Dominasi 60ml mengonfirmasi bahwa **ukuran ini adalah main SKU** — pastikan stok 60ml selalu tersedia. Ukuran 20ml dapat diposisikan sebagai **trial entry point** untuk akuisisi buyer baru.
+- Completion rate 96.37% adalah **aset kepercayaan brand** — tonjolkan angka ini sebagai social proof dalam konten marketing.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -400,12 +540,11 @@ sql/05_scheduled_etl.sql
 
 ## 7. Power BI Dashboard
 
-[LINK DASHBOARD](https://app.powerbi.com/view?r=eyJrIjoiZWE5ZGQ3YjgtZDhjYi00MWJkLWIxNGQtZWQ1MmI5NjgzNTZiIiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D&pageName=49b2dc96a744df1b1fe4)
+[LINK DASHBOARD](https://app.powerbi.com/view?r=eyJrIjoiYjA2YmIzNzItYzYxMy00YzkxLWI5ZWYtYzdkZmY3NWJkY2IzIiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D)
 
-<img width="1744" height="838" alt="image" src="https://github.com/user-attachments/assets/9eceb813-91c4-4659-a1c8-8693709fa629" />
-<img width="1443" height="811" alt="image" src="https://github.com/user-attachments/assets/04b35c1e-0edc-45b6-8716-04681b083bfa" />
-<img width="1444" height="816" alt="image" src="https://github.com/user-attachments/assets/8e96eb6a-a6c7-4a4c-94bf-b64904713741" />
-
+<img width="1607" height="736" alt="image" src="https://github.com/user-attachments/assets/e88133cf-f424-4bb2-a74c-8437928f5583" />
+<img width="1369" height="765" alt="image" src="https://github.com/user-attachments/assets/5380c33e-096f-4509-8025-6ff77990304f" />
+<img width="1366" height="763" alt="image" src="https://github.com/user-attachments/assets/c1aca7ec-cbe3-41b9-ada7-46a152ce1ee9" />
 
 
 Dashboard terdiri dari 3 halaman yang masing-masing melayani satu divisi:
