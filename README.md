@@ -1,4 +1,4 @@
-## Tentang Gendes
+# Tentang Gendes
 <img width="226" height="88" alt="image" src="https://github.com/user-attachments/assets/53c0a994-72e8-4281-8edc-c251b0bfa2e4" />
 
 Gendes adalah brand lokal Indonesia yang bergerak di bidang *feminine hygiene* — perawatan kebersihan area kewanitaan. Gendes hadir untuk menjawab kebutuhan perempuan Indonesia yang semakin sadar akan pentingnya menjaga kebersihan area intim, namun juga menginginkan produk yang memberikan rasa nyaman, aman, dan meningkatkan kepercayaan diri dalam aktivitas sehari-hari.
@@ -6,6 +6,9 @@ Gendes adalah brand lokal Indonesia yang bergerak di bidang *feminine hygiene* �
 Lini produk utama Gendes mencakup **wash foam** (sabun pembersih) dan **feminine spray**, yang dirancang untuk penggunaan harian. Produk-produk ini diformulasikan dengan bahan aktif alami seperti manjakani, daun sirih, dan niacinamide — dengan manfaat antibakteri, menjaga keseimbangan pH, serta membantu mengatasi masalah umum seperti keputihan, gatal, dan bau tidak sedap. Kandungan tambahan seperti vitamin B5 turut berfungsi menjaga kelembapan dan kesehatan kulit area kewanitaan.
 
 Repositori ini mendokumentasikan infrastruktur data analytics Gendes, mencakup pipeline PostgreSQL, lapisan view untuk Power BI, dan insight bisnis berbasis data penjualan di platform Shopee dan TikTok Shop.
+
+# Disclaimer
+Karena Data adalah milik perusahaan maka seluruh data sudah dimodifikasi sedemikian rupa dan tidak mereprentasiskan sebagaimana data asli 
 
 ---
 
