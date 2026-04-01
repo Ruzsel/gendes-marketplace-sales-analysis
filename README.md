@@ -25,44 +25,167 @@ Repositori ini mendokumentasikan infrastruktur data analytics Gendes, mencakup p
 
 > **Audience:** CEO, Owner, Direktur  
 > **Sumber data:** `vw_exec_growth_health`
+---
 
-### Ringkasan Kinerja Bisnis (2023–2025)
+## KPI SUMMARY (2023–2025)
 
-| Metrik | Shopee | TikTok Shop | Total |
-|---|---|---|---|
-| Total GMV (completed orders) | Rp 191.5 jt | Rp 440.9 jt | **Rp 632.4 jt** |
-| Total Orders | 3.010 | 6.990 | **10.000** |
-| Completion Rate | 87.6% | 88.4% | ~88% |
-| Cancellation Rate | 8.3% | 8.0% | ~8.1% |
-| Avg Order Value | Rp 72.6 rb | Rp 71.3 rb | ~Rp 71.9 rb |
-| Avg Discount Rate | 10.1% | 9.9% | ~10% |
+> **2023**
+<img width="1253" height="184" alt="image" src="https://github.com/user-attachments/assets/ea94993e-6bd0-4cf9-8e9d-8d039bf2f053" />
 
-### Insight Kunci
+> **2024**
+<img width="1250" height="185" alt="image" src="https://github.com/user-attachments/assets/a177f3f6-1e24-4fba-b80b-e55055c14a56" />
 
-**1. TikTok Shop adalah mesin pertumbuhan utama — volume 2.3x lebih besar dari Shopee.**
-Dari total 10.000 order, 6.990 (70%) berasal dari TikTok Shop dengan GMV Rp 440.9 juta vs Shopee Rp 191.5 juta. TikTok bukan lagi channel sekunder — ini sudah menjadi primary channel.
+> **2025**
+<img width="1253" height="185" alt="image" src="https://github.com/user-attachments/assets/c4f2ca80-b899-4e4b-8481-c6f20e4109e4" />
 
-**2. GMV Shopee menunjukkan tren penurunan, TikTok stabil dengan recovery di 2025.**
-Shopee mengalami kontraksi dari Rp 65.2 jt (2023) ke Rp 62.0 jt (2025), turun 4.9% dalam 2 tahun. TikTok sempat dip di 2024 (Rp 143.0 jt) namun rebound ke Rp 151.2 jt di 2025, mengindikasikan momentum yang positif.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**3. AOV stagnan di kedua platform — pertumbuhan hanya berbasis volume, bukan nilai transaksi.**
-AOV Shopee: Rp 72.6k (2023) → Rp 71.7k (2025). AOV TikTok: Rp 72.0k (2023) → Rp 70.9k (2025). Tidak ada kenaikan signifikan selama 3 tahun, yang berarti bisnis tumbuh secara horizontal (lebih banyak pembeli) bukan secara vertikal (pembeli belanja lebih banyak).
+### 1. Revenue Performance
+- 2024 mengalami penurunan:
+  - GMV: -2.83%
+  - Net Revenue: -2.31%
+- 2025 recovery:
+  - GMV: +2.06%
+  - Net Revenue: +2.79%
+- Net Revenue tumbuh lebih cepat dari GMV → monetization membaik
 
-**4. Cancellation rate 8% adalah sinyal operasional yang perlu dimonitor.**
-Dari 10.000 order, sekitar 808 order dibatalkan. Pada skala GMV yang ada, ini merepresentasikan potensi revenue yang hilang setiap bulannya.
+---
 
-**5. Konsentrasi geografis sangat tinggi — Jawa mendominasi >70% GMV.**
-DKI Jakarta dan Jawa Barat saja berkontribusi lebih dari 40% total GMV di kedua platform. Sumatera Utara menjadi provinsi non-Jawa terbesar.
+### 2. AOV Trend
+- 2023: Rp65.9K  
+- 2024: Rp65.2K (-1.02%)  
+- 2025: Rp64.5K (-1.11%)
 
-### Rekomendasi
+- Penurunan konsisten → growth didorong volume, bukan value per order
 
-| Prioritas | Aksi | Dampak Estimasi |
-|---|---|---|
-| **Tinggi** | Alihkan budget promosi ke TikTok Shop — jadikan sebagai primary growth driver | Volume +15-20% |
-| **Tinggi** | Investigasi penyebab declining GMV Shopee — evaluasi relevansi channel di mix strategi | Revenue preservation |
-| **Sedang** | Rancang program upsell/cross-sell untuk mendorong AOV naik minimal 10-15% | Revenue +8-12% |
-| **Sedang** | Analisis akar penyebab cancellation 8% — apakah stok, ekspektasi produk, atau harga | Revenue recovery |
-| **Rendah** | Ekspansi ke Sumatera, Kalimantan, Sulawesi secara bertahap — market belum saturasi | Volume baru |
+---
+
+### 3. Completion Rate
+- 87.93% → 88.65% (↑)
+- Indikasi peningkatan eksekusi operasional
+
+</td>
+
+<td width="50%" valign="top">
+
+### 4. Cancellation & Return
+
+**Cancellation Rate**
+- 2024 naik, 2025 membaik (8.36% → 8.01%)
+- Masih di atas baseline 2023 (7.88%)
+
+**Return Rate**
+- Turun konsisten (4.19% → 3.34%)
+- Indikasi kualitas produk & expectation alignment meningkat
+
+---
+
+### 5. Key Risks
+- Ketergantungan pada volume (AOV turun)
+- Potensi over-discounting
+- Cancel rate belum optimal
+
+---
+
+### 6. Executive Takeaway
+- 2025 menunjukkan recovery dengan efisiensi lebih baik  
+- Namun masih terdapat tekanan pada AOV dan kualitas growth
+
+</td>
+</tr>
+</table>
+
+## GMV Trend Monthly — Executive Insight (2025 vs 2024)
+
+<img width="888" height="471" alt="image" src="https://github.com/user-attachments/assets/e4285c76-4a4f-490a-8a39-a9759bd0c714" />
+
+<table>
+<tr>
+<td width="50%">
+
+### Key Insights
+- GMV 2025 berada pada range **Rp13.0M – Rp21.9M**, menunjukkan volatilitas bulanan yang tinggi.
+- Peak terjadi di **May (~Rp21.88M)** sebagai performa terbaik sepanjang tahun.
+- Penurunan signifikan terlihat di **February dan September**, indikasi seasonality atau lemahnya campaign.
+- Performa **lebih tinggi dari tahun sebelumnya (YoY)** pada: Jan, Mar, May, Jul, Oct, Dec.
+- Performa **lebih rendah dari tahun sebelumnya** pada: Feb, Jun, Aug, Sep, Nov.
+- **AOV relatif stabil** (Rp62K–Rp67K) → pertumbuhan GMV lebih dipengaruhi volume/order.
+
+</td>
+<td width="50%">
+
+### Business Implication
+- Pertumbuhan masih **campaign-driven**, belum menunjukkan baseline demand yang kuat.
+- Risiko terdapat pada bulan low performance (Feb, Sep) → potensi revenue leakage.
+- Bulan peak (May, Oct) menunjukkan **strategi yang bisa direplikasi**.
+- Tidak ada peningkatan signifikan pada AOV → peluang di pricing dan bundling.
+- Ketidakkonsistenan YoY menunjukkan eksekusi marketing belum stabil.
+
+</td>
+</tr>
+</table>
+
+## GMV Contribution by Region — Executive Insight (2025)
+
+<img width="1480" height="303" alt="image" src="https://github.com/user-attachments/assets/18321425-8d23-47d2-b988-24a7056773a4" />
+
+
+<table>
+<tr>
+<td width="50%">
+
+### Key Insights
+- **Jabodetabek mendominasi GMV** dengan kontribusi ~Rp90.7M (±40–45% total), menunjukkan ketergantungan tinggi pada satu region.
+- Tier 2 terbesar: **Jawa Timur (~Rp26.1M)** dan **Jawa Barat (~Rp21.4M)** → menjadi secondary growth driver.
+- **Jawa Tengah (~Rp17.2M)** dan **Sumatera Utara (~Rp13.4M)** berada di mid-tier, namun gap dengan top region masih signifikan.
+- Long tail region (Sulsel, Sumbar, Yogya, Kalimantan, Bali, Lampung, Riau, Aceh) kontribusi relatif kecil (<Rp10M).
+- **AOV relatif seragam** (±Rp62K–Rp66K), kecuali **Sumatera Barat (~Rp70K)** yang lebih tinggi → indikasi daya beli/pattern berbeda.
+- Distribusi revenue menunjukkan **high concentration risk** di Jabodetabek.
+
+</td>
+<td width="50%">
+
+### Business Implication
+- Bisnis sangat bergantung pada **urban core market (Jabodetabek)**.
+- Growth di luar Jawa masih **underpenetrated** meskipun ada potensi volume.
+- Secondary cities (Jatim, Jabar) sudah menunjukkan traction → bisa di-scale.
+- Long tail region belum optimal → kemungkinan constraint di distribusi, awareness, atau channel.
+- AOV stagnan antar region → belum ada diferensiasi pricing strategy.
+
+</td>
+</tr>
+</table>
+
+## GMV Behavior — Executive Insight (2025)
+
+<img width="252" height="533" alt="image" src="https://github.com/user-attachments/assets/1ef86ab1-5f8b-44c7-9d35-00fc70857d16" />
+
+
+<table>
+<tr>
+<td width="50%">
+
+### Key Insights
+- **Payday mendominasi GMV (55.6%)** vs non-payday (44.4%) → demand masih kuat dipengaruhi momen gajian.
+- **Weekday menjadi kontributor utama (69.5%)** dibanding weekend → transaksi lebih banyak terjadi di hari kerja.
+- **TikTok mendominasi platform (71.2%)** dibanding Shopee (28.8%) → channel utama revenue saat ini.
+- Shopee masih underutilized meskipun memiliki potensi sebagai marketplace besar.
+- Terdapat pola **event-driven (payday)** dan **routine-driven (weekday)** secara bersamaan.
+
+</td>
+<td width="50%">
+
+### Business Implication
+- Payday tetap menjadi **core revenue driver** → penting untuk campaign utama.
+- Weekday dominance menunjukkan **behavior pembelian lebih rutin**, bukan hanya impuls di weekend.
+- Ketergantungan tinggi pada TikTok → risiko pada perubahan algoritma/platform.
+- Shopee belum optimal → peluang untuk diversifikasi revenue channel.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -276,6 +399,14 @@ sql/05_scheduled_etl.sql
 ---
 
 ## 7. Power BI Dashboard
+
+[LINK DASHBOARD](https://app.powerbi.com/view?r=eyJrIjoiZWE5ZGQ3YjgtZDhjYi00MWJkLWIxNGQtZWQ1MmI5NjgzNTZiIiwidCI6IjUwODkxNmEwLTdiODktNDNhMS1hZjRlLTcyZmUxNWFiYTViOSIsImMiOjEwfQ%3D%3D&pageName=49b2dc96a744df1b1fe4)
+
+<img width="1744" height="838" alt="image" src="https://github.com/user-attachments/assets/9eceb813-91c4-4659-a1c8-8693709fa629" />
+<img width="1443" height="811" alt="image" src="https://github.com/user-attachments/assets/04b35c1e-0edc-45b6-8716-04681b083bfa" />
+<img width="1444" height="816" alt="image" src="https://github.com/user-attachments/assets/8e96eb6a-a6c7-4a4c-94bf-b64904713741" />
+
+
 
 Dashboard terdiri dari 3 halaman yang masing-masing melayani satu divisi:
 
