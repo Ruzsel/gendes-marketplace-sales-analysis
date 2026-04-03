@@ -552,31 +552,87 @@ sql/05_scheduled_etl.sql
 
 Dashboard terdiri dari 3 halaman yang masing-masing melayani satu divisi:
 
-### Halaman 1 — Executive Dashboard
+## Halaman 1 — Executive Dashboard
+
 **Data source:** `vw_exec_growth_health`
 
-Visualisasi utama:
-- GMV trend line (Shopee vs TikTok, per bulan/kuartal)
-- KPI cards: total GMV, completion rate, cancellation rate, unique buyers
-- Choropleth map performa per provinsi
-- Waterfall chart revenue vs discount vs refund
+### KPI Cards
+- Total GMV CY & PY comparison + % change
+- Total Net Revenue CY & PY comparison + % change
+- AOV CY & PY comparison + % change
+- Complete Orders CY % & PY % comparison
+- Cancel Orders CY % & PY % comparison
+- Return Orders CY % & PY % comparison
 
-### Halaman 2 — Marketing Dashboard
+### Filter Panel (kiri)
+- **Payday** toggle (True / False) — donut chart dengan GMV split
+- **Weekend** toggle (True / False) — donut chart dengan GMV split
+- **Platform** toggle (TikTok / Shopee) — donut chart dengan GMV split
+
+### Visualisasi Utama
+- **GMV Trend Line** — Current Year vs Previous Year per bulan (line chart), dengan anotasi nilai min/max
+- **GMV Distribution by Region Group** — treemap performa GMV per provinsi/wilayah (Jabodetabek, Jawa Barat, Jawa Timur, Sumatera, Sulawesi, Bali, Kalimantan, dll.)
+
+---
+
+## Halaman 2 — Marketing Dashboard
+
 **Data source:** `vw_mkt_promo_buyer`
 
-Layout tiga baris:
-- **Baris 1:** Volume order per hari (heatmap) + distribusi jam order
-- **Baris 2:** GMV per discount bucket + completion rate per disc bucket
-- **Baris 3:** New vs Repeat buyer breakdown per channel + AOV comparison
+### Filters (atas)
+- Year, Month, Platform (dropdown)
 
-### Halaman 3 — Brand Dashboard
+### KPI Cards
+- Total GMV
+- Complete Orders Mkt (count)
+- Complete Orders % Mkt
+- Unique Buyers
+- Total Discount Given
+- Repeat Buyers %
+- AOV Mkt
+
+### Visualisasi — Baris 1
+- **Total GMV Trend Daily** — line chart GMV harian sepanjang bulan, dengan anotasi Highest & Lowest GMV
+
+### Visualisasi — Baris 2
+- **Discount Distribution vs GMV Contribution** — tabel dengan kolom: Discount Bucket, Discount Given, Total GMV, Discount Ratio; dengan conditional formatting highlight per bucket
+- **Orders by Platform** — donut chart split: TikTok Shop, Shopee, Affiliate, TikTok Live
+- **Peak Activity by Hour and Day** — heatmap matriks (hari × jam) menampilkan GMV per slot waktu
+
+### Visualisasi — Baris 3
+- **GMV by Platform** — bar chart perbandingan GMV: TikTok Shop, Shopee, Affiliate, TikTok Live
+- **GMV and Order Completion Rate by Discount Bucket** — combo chart (bar GMV + line completion rate %) per discount bucket
+- **Unique Buyers by Discount Bucket and Buyer Type** — stacked bar chart New vs Repeat buyer per discount bucket
+
+---
+
+## Halaman 3 — Brand Dashboard
+
 **Data source:** `vw_brand_sku_flavor`
 
-Visualisasi utama:
-- SKU prioritization matrix (GMV vs growth rate)
-- Flavor performance bar chart per island group
-- Size split treemap (20ml vs 60ml per region)
-- Bundle effectiveness scatter plot (AOV vs order volume)
+### KPI Cards
+- GMV
+- Net Revenue
+- Total Orders
+- AOV
+- AVG Discount % Brand
+- Completion Rate
+- Return Rate
+
+### Visualisasi — Baris 1
+- **TOP 10 SKU by GMV** — horizontal bar chart ranking SKU (e.g. GDS-FOA-VAN-60, GDS-SPR-VAN-60, dll.)
+- **Flavor by GMV** — horizontal bar chart per flavor (Vanilla, Bubblegum, Mixed Bundle, Hazelnut, Mango, Grape)
+- **GMV by Day and Flavor** — multi-line chart trend GMV per bulan, breakdown per flavor
+
+### Visualisasi — Baris 2
+- **Bottle Size Sold by Province** — tabel matriks provinsi × ukuran botol (20ml vs 60ml) dengan unit sold
+- **Unit Sold by Platform** — donut chart split TikTok vs Shopee
+- **GMV by Product Type** — donut chart split Foam, Spray, Bundle
+- **Net Revenue vs Unit Sold** — scatter plot per product type (Bundle, Foam, Spray)
+
+### Visualisasi — Baris 3
+- **GMV Distribution by Province** — treemap side-by-side TikTok vs Shopee per provinsi
+- **Province Performance Table** — tabel detail per provinsi: GMV Brand, Net Revenue Brand, Total Orders, Units Sold, Completion Rate, Return Rate
 
 ---
 
